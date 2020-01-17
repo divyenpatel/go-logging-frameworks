@@ -27,6 +27,7 @@ func main() {
 		func2(mainCtx)
 	}
 	log.GetLogger(mainCtx).Sugar().Infof("main function end")
+	printCount++
 	t := time.Now()
 	elapsed := t.Sub(start)
 	fmt.Println(fmt.Sprintf("elapsed: %v", elapsed.Seconds()))
